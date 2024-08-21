@@ -1,11 +1,13 @@
-*{
-    background-color: #163A24;
-}
-
 body{
     margin: 2%;
     color: white;
     font-family: "inter";
+    background-color: #163A24;
+}
+
+h1, h2, h3{
+    font-family: "Domine";
+    font-weight: 700;
 }
 
 .header-container{
@@ -25,6 +27,11 @@ body{
     width: 100px;
 }
 
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
 .menu-container{
     flex: 1;
     display: flex;
@@ -54,11 +61,17 @@ body{
     border: none;
 }
 
+.menu-container li button:hover{
+    background-color: #15762e;
+    cursor: pointer;
+}
+
 .homepage-container{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .homepage-text{
@@ -76,5 +89,61 @@ body{
 }
 
 .homepage-img image{
-    width: 80px;
+    width: 60px;
+}
+
+.content{
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content-container{
+    width: 80%; /* Reduce width to center the content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Center the content container */
+    padding: 20px 0; /* Add some padding for spacing */
+}
+
+.content-image{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: 10px;
+}
+
+.content-image img{
+    max-width: 90%;
+    height: auto;
+}
+
+.content-text{
+    flex: 1;
+    margin: 10px;
+    text-align: left;
+
+}
+
+footer{
+    text-align: center;
+}
+
+footer button{
+    width: 200px;
+    height: 40px;
+    font-family: "inter";
+    font-weight: 600;
+    color: #163A24;
+    background-color: #FBC8B8;
+    padding: 5px;
+    border-radius: 30px;
+    border: none;
+}
+    
+footer button:hover{
+    background-color: #fab5a0;
+    cursor: pointer;
 }
